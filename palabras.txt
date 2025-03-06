@@ -53,3 +53,6 @@ Granddaughter -> nieta
 Bread -> pan  
 Some -> poco, algunos, algunas, algo de  
 Path -> camino, ruta, sendero 
+sank -> hundir, hundirse, caer
+van -> furgoneta, camioneta, camión 
+interesting -> interesante
