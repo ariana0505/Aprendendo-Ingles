@@ -13,6 +13,7 @@ import random
 diccionario = {}
 texto = []
 score =0
+memoria = []
 
 #Abriendo fichero
 fichero = open('palabras.txt','r', encoding="utf-8")
@@ -28,12 +29,17 @@ for i in range(len(texto)):
     significado = valores[1:] 
     diccionario[palabra] = significado
 
-print(texto)
 intentos = int(input("Ingrese el numero de intentos: "))
 
 for i in range(intentos):
     #obteniendo un item random
     clave, valor = random.choice(list(diccionario.items()))
+
+    if clave in memoria:
+        continue
+    else:
+        memoria.append(clave)
+
     valor = ", ".join(valor)#me devuelve un str separado por comas
     valores = valor.split(", ")#me devuelveuna lista que esta separado por comas (", ")
     palabraIngresada = input(f"Ingrese el significado de la la palabra {clave}: ").strip()
