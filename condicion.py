@@ -1,4 +1,3 @@
-
 def condicional(palabraIngresada , valores, score):
     if palabraIngresada in valores:
         print("Excelente! +1")
