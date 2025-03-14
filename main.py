@@ -1,5 +1,11 @@
 from condicion import condicional
 from unidecode import unidecode
+from fastapi import FastAPI, APIRouter
+
+# router = APIRouter()
+# app = FastAPI()        
+# app.include_router(router)
+
 
 import random
 
